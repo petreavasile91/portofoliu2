@@ -91,12 +91,13 @@ a{
   /* padding: 10px 50px; */
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: white;
   font-size: 20px;
   cursor: pointer;
-  border-radius: 10px;
-  transition: .5s;
+  
+  
 
   
   
@@ -110,17 +111,26 @@ a{
   
 }
 
-.navbar ul li:hover{
-  background: orange;
-  
+  .li2:hover{
+  border-bottom: 2px solid rgb(196, 187, 187);
+  padding-bottom: 8px;
 }
+  .li3:hover{
+  border-bottom: 2px solid rgb(196, 187, 187);
+  padding-bottom: 8px;
+}
+  .li4:hover{
+  border-bottom: 2px solid rgb(196, 187, 187);
+  padding-bottom: 8px;
+}
+
 
 #li1{
   text-align: left;
   /* padding-left: 0; */
   padding-left: 20px;
+} 
 
-}
 a { color: inherit;
   text-decoration: none;
   /* color: white;  */
@@ -148,11 +158,13 @@ a { color: inherit;
 
 .hero-title{
   font-size: 53px;
+  color: #f7f7f7;
 }
 .hero-subtitle{
   font-size: 20px;
   text-transform: capitalize;
   padding-bottom: 1.2rem;
+  color: #f7f7f7;
 }
 
 .line{
@@ -164,7 +176,7 @@ a { color: inherit;
 .hero-icons{
   padding-top: 1.2rem;
   font-size: 25px;
-  
+  color: #f7f7f7;
 }
 
 .hero-icons i{
@@ -173,8 +185,9 @@ a { color: inherit;
 }
 
 .hero-icons i:hover{
-  color: rgb(5, 5, 77);
-  transform: scale(1.2);
+  color: rgb(3, 3, 3);
+  transform: scale(1.4)
+  
 }
 
 
