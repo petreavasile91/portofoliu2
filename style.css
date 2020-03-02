@@ -66,7 +66,7 @@ a{
 
 .header{
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   background: linear-gradient(rgba(12, 2, 2, 0.5),rgba(12, 0, 0, 0.3)), url("./hero.jpg") center/cover no-repeat fixed;
   display: flex;
   align-items: center;
@@ -91,8 +91,8 @@ a{
   list-style-type: none;
   display: inline-block;
   /* padding: 10px 50px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 2px;
   padding-left: 25px;
   padding-right: 25px;
   color: white;
@@ -112,15 +112,15 @@ a{
 
   .li2:hover{
   border-bottom: 2px solid rgb(196, 187, 187);
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
   .li3:hover{
   border-bottom: 2px solid rgb(196, 187, 187);
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
   .li4:hover{
   border-bottom: 2px solid rgb(196, 187, 187);
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 
@@ -134,24 +134,6 @@ a { color: inherit;
   text-decoration: none;
   /* color: white;  */
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .banner{
@@ -186,13 +168,13 @@ a { color: inherit;
 .line{
   height: 1px;
   border-bottom: 2px solid rgb(196, 187, 187);
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .hero-icons{
   padding-top: 1.2rem;
   font-size: 25px;
-  color: #f7f7f7;
+  color:#f0edee;
 }
 
 .hero-icons i{
@@ -201,16 +183,16 @@ a { color: inherit;
 }
 
 .hero-icons i:hover{
-  color: rgb(3, 3, 3);
+  color: #a5d8ff;
   transform: scale(1.4)
   
 }
 
 
-@media screen and (max-width:678px){
+@media screen and (max-width:768px){
   .navbar ul li{
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 12px;
   padding-right: 12px;
   font-size: 20px;
@@ -236,6 +218,89 @@ a { color: inherit;
 }
 }
 
+/******************* end of hero section */
+
+
+
+/******************* about section  */
+.about{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  padding-top: 4rem;
+  align-items: center;
+  
+}
+
+.about-more{
+  grid-column: 1/3;
+  text-align: center;
+}
+.about-image{
+  padding-top: 1rem;
+}
+
+.about-title{
+text-align: center;
+
+}
+
+.info{
+  padding-top: 2rem;
+}
+.about-info{
+  /* padding-top: 2rem; */
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
+}
+.about-info-2{
+  /* padding-top: 2rem; */
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  padding-top: 5rem;
+}
+
+/* .qrcode{
+  display: block;
+  width: 200px;
+} */
+
+
+@media screen and (max-width:768px){
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    
+  }
+  .about-image{
+  grid-row: 1/2;
+  padding-top: 0;
+  }
+  .info{
+  grid-row: 2/3;
+  margin-top: -10px;
+  }
+  .about-more{
+  grid-row: 3/4;
+  }
+  .about-info{
+    padding: 0 0.7rem;
+    font-size: 1rem;
+  }
+  .about-info-2{
+  /* padding-top: 2rem; */
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  padding-top: 3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+}
+
+
+/******************* end of about  */
 
 
 
