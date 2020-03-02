@@ -77,6 +77,8 @@ a{
 .navbar{
   width: 100%;
   padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   position: fixed;
   top: 0px;
   transition: .5s;
@@ -86,21 +88,26 @@ a{
 .navbar ul li{
   list-style-type: none;
   display: inline-block;
-  padding: 10px 50px;
+  /* padding: 10px 50px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
   color: white;
   font-size: 20px;
   cursor: pointer;
   border-radius: 10px;
   transition: .5s;
+
   
   
 }
 
 .navbar ul{
-  max-width: 1220px;
+  max-width: 1170px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr repeat(4,auto);
+  
 }
 
 .navbar ul li:hover{
@@ -110,6 +117,9 @@ a{
 
 #li1{
   text-align: left;
+  /* padding-left: 0; */
+  padding-left: 20px;
+
 }
 a { color: inherit;
   text-decoration: none;
@@ -119,22 +129,53 @@ a { color: inherit;
 
 
 .banner{
-  
-  max-width: 1220px;
+  width: 1170px;
   margin: 0 auto;
   /* /* display: grid;
   grid-template-rows: auto auto auto; */
+  display: flex;
+  flex-direction: column;
 
 }
 
 .banner div{
-  margin-right: 780px;
-  margin-left: 30px;
+  
+  
   text-align: left;
   font-family: 'Poppins', sans-serif;
+  margin-left: 30px;
 }
 
+.hero-title{
+  font-size: 53px;
+}
+.hero-subtitle{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-bottom: 1.2rem;
+}
 
+.line{
+  height: 1px;
+  border-bottom: 2px solid rgb(196, 187, 187);
+  max-width: 500px;
+}
+
+.hero-icons{
+  padding-top: 1.2rem;
+  font-size: 25px;
+  
+}
+
+.hero-icons i{
+  padding-left: 20px;
+  transition: var(--mainTransition);
+}
+
+.hero-icons i:hover{
+  color: rgb(5, 5, 77);
+  transform: scale(1.2);
+}
 
 
 
@@ -143,6 +184,5 @@ a { color: inherit;
   height: 2000px;
   background: green;
   margin: 20px auto;
-
 }
 
