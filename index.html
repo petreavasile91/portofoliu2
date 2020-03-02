@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+<body>
+  
+<header class="header">
+      
+    <div class="navbar" id="navbar">
+      <ul>
+        <li id="li1"><i class="fas fa-laptop-code"></i></li>
+        <!-- <li id="li"><a href="#home">Home</a></li> -->
+        <li id="li2">About</li>
+        <li id="li3">Work</li>
+        <li id="li4">Contact</li>
+      </ul>
+    </div>
+
+    
+
+
+    <div class="banner">
+      <div class="hero-title">Petrea Vasile</div>
+      <div class="hero-subtitle" >Front-end developer & developing into more</div>
+      <div class="hero-icons"><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+    </div>
+
+</header>
+
+
+<div class="box"></div>
+
+
+
+<!-- add some javascript code -->
+
+<script type="text/javascript">
+
+  var nav = document.getElementById('navbar');
+
+  window.onscroll = function () {
+
+    if (window.pageYOffset > 100) {
+
+      navbar.style.background = "#ffffff";
+      navbar.style.boxShadow = "0px 2px 1px rgb(196, 187, 187)";
+      
+      li1.style.color = "#000000";
+      li2.style.color = "#000000";
+      li3.style.color = "#000000";
+      li4.style.color = "#000000";
+
+    }
+    else {
+      navbar.style.background = "transparent";
+      navbar.style.boxShadow = "none";
+      
+      li1.style.color = "#ffffff";
+      li2.style.color = "#ffffff";
+      li3.style.color = "#ffffff";
+      li4.style.color = "#ffffff";
+    }
+  }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
