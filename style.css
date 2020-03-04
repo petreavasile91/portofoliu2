@@ -362,6 +362,7 @@ letter-spacing: 0.25rem;
 }
 .work-footer{
   padding: 1.2rem 1.5rem;
+  background: #fff;
 
 }
 .project-title{
@@ -449,3 +450,13 @@ letter-spacing: 0.25rem;
   margin: 20px auto;
 }
 
+
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 92px;
+  padding: 80px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
