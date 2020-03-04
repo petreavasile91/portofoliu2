@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap'); */
 
+
+
+
 /* /********************* css variables */
 :root{
   --primaryColor:#3fd0d4;
@@ -14,6 +17,12 @@
   --darkShadow: 4px 10px 5px 0 rgba(0,0,0,0.50);
 }
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font-family: 'Lato', sans-serif;
   -webkit-columns: var(--mainBlack);
@@ -26,6 +35,8 @@ body{
 
 
 /****************** global styles */
+
+
 
 img{
   width: 100%;
@@ -58,11 +69,11 @@ a{
 }
 
 
-*,::before,::after{
+/* *{
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-}
+} */
 
 .header{
   width: 100%;
@@ -389,7 +400,7 @@ letter-spacing: 0.25rem;
   align-self: center;
 }
 .projects-link{
-  text-align: center;
+  text-align:center;
 }
 @media screen and (min-width:768px){
   .work-center{
@@ -404,6 +415,10 @@ letter-spacing: 0.25rem;
             flex: 0 0 calc(50% - 1rem);
     
   }
+  .projects-link{
+  text-align:left;
+  padding-left: 2rem;
+}
 }
 @media screen and (min-width:1170px){
   .work-center{
@@ -417,6 +432,10 @@ letter-spacing: 0.25rem;
     -webkit-box-flex: 0;
             flex: 0 0 calc(33.333% - 1rem);
   }
+  .projects-link{
+  text-align:left;
+  padding-left: 2rem;
+}
 }
 
 .btn-primary{
@@ -429,18 +448,87 @@ letter-spacing: 0.25rem;
   
   transition: all 0.3s linear;
   cursor: pointer;
+
 }
 
 
 .btn-primary{
   background: #a5d8ff;
-  border-color:#a5d8ff; ;
+  border-color:#a5d8ff;
+  font-size: 1.3rem;
 }
 .btn-primary:hover{
   background: transparent;
-  color: var(--primaryColor);
+  color: #a5d8ff;
+  font-weight: bold;
 }
 /* ********************end of work section */
+
+
+/* contact */
+
+.contact{
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-bottom: 2rem ;
+  padding-top: 1rem;
+}
+.contact h2,h3{
+  text-align: center;
+}
+.contact-subtitle{
+  color: #CC6666;
+}
+form { max-width:420px;
+margin: 0 auto;}
+
+.feedback-input {
+  
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+
+
+
+
+
+
 
 
 .box{
@@ -452,11 +540,4 @@ letter-spacing: 0.25rem;
 
 
 
-h1 {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 92px;
-  padding: 80px 50px;
-  text-align: center;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-}
+
