@@ -524,9 +524,31 @@ textarea {
 [type="submit"]:hover { background:#CC4949; }
 
 
+@media screen and (max-width:768px){
+  form{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
+/* **************footer */
+.footer{
+  background: rgb(26, 25, 25);
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+.footer-text{
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
+}
+.social-icons{
+  letter-spacing: 0.7rem;
+}
 
-
+/* **************end of footer */
 
 
 
